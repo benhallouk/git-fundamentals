@@ -400,9 +400,9 @@ Sometimes the commit you want to change is not the nearest one, the easiest way 
 
 To do that you can use the magic feature of git `auto-squashing`, to do that follow this steps:
 
-- create a new commit with message that start with this string `fixup!` followed by **the same commit message like the commit you are targeting** that `git commit -m "fixup! feat(some-feature): some subject ..."`
+- create a new commit with message that start with this string `fixup!` followed by **the same commit message like the commit you are targeting** the command may look like that `git commit -m "fixup! feat(some-feature): some subject ..."`
 
-- after start the interactive rebase starting from first commit `git rebase --root --autosquash`
+- after start the interactive rebase starting from first commit `git rebase -i --root --autosquash` and leave git to do its magic
 
 - save the rebase file and exit
 
